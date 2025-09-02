@@ -1,6 +1,9 @@
 # 📚 LLM + RAG con LangChain, Chroma y HuggingFace
 
-Este proyecto implementa un **sistema de Recuperación Aumentada por Generación (RAG)** usando **LangChain**, **ChromaDB** y modelos de **HuggingFace**.  
+Este proyecto implementa un **sistema de Recuperación Aumentada por Generación (RAG)** usando **LangChain**, **ChromaDB** y modelos de **HuggingFace**. 
+La informacion y codigo fuente esta en la carpeta summary , la cual toma el libro de alicia en el pais de las maravillas para alimentar el modelo 
+
+
 La idea principal es:  
 1. **Dividir documentos** en chunks manejables.  
 2. **Crear embeddings** con un modelo de sentence-transformers.  
@@ -23,3 +26,12 @@ La idea principal es:
 
    ![ Embedding + chroma ](1.png)
    ![ Ejemplo de consulta ](2.png)
+
+
+## ▶️ Uso
+
+1. Crear la base de datos de vectores : python create_database.py
+
+2. Hacer consultas: python query_data.py "How does Alice meet the Mad Hatter?"
+
+
